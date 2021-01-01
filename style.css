@@ -366,7 +366,7 @@ header {
     #home .btn-container {
         width: 25rem;
         left: 15em;
-        top: 30em;
+        top: 32em;
     }
     .btn-outline-dark {
         margin-right: 10px;
@@ -475,22 +475,25 @@ header {
         }
         }
 
-@media only screen  and (min-width : 1500px) {
+@media only screen  and (min-width : 1490px) {
             #text1 {
-                left: 56vh;
+                left: 46vh;
             }
             #text2 {
-                left: 70vh;
+                left: 58vh;
             }
             #home .btn-container {
                 width: 45rem;
                 left: 47em;
-                top: 30em;
+                top: 32em;
             }
             #portfolio {
                 height: 175vh;
             }
         }
+
+
+        
 
 
 
