@@ -1,0 +1,496 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body, html {
+    height: 100%;
+   
+    
+}
+/* NAVBAR*/
+.navbar {
+    position: fixed;
+    width: 28%;
+    font-family: 'Poppins', sans-serif;
+    color: #757070;
+    width: 100%; 
+    padding-top: 15px;
+    transition: 700ms ease;
+    z-index: 1;
+}
+
+.navbar.scrolled {
+   background-color: #FF7BA1;
+}
+
+header {
+    /* padding-top: 50px; */
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    padding-left: 35rem;
+}
+
+/* HOME PAGE */
+#home {
+    height: 100vh; 
+    
+}
+
+#name path {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: line-anim 5s ease forwards;
+}
+
+#name {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 0.5s ease forwards 3s;
+}
+
+@keyframes line-anim {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #FF7BA1;
+    }
+}
+
+.text {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #757070;
+}
+#text1 {
+    position: absolute;
+    top: 34vh;
+    left: 55.5vh;
+}
+
+#text2 {
+    position: absolute;
+    top: 49vh;
+    left: 70vh;
+}
+
+.btn-container {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 45%;
+  
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.btn-container .btn {
+    height: 2.5em;
+    width: 16em;
+}
+
+.btn-outline-dark {
+    color: #FF7BA1 ;
+    border-radius: 0% ;
+    border-color: #FF7BA1 ;
+}
+
+.btn-outline-dark:hover {
+        background-color: transparent;
+        color: #FF7BA1;
+        border-color: #fa1858 ;
+}
+.btn-secondary {
+    background-color: #827F7F;
+    border-radius: 0%
+}
+
+.scrolldown {
+    position: absolute;
+}
+
+.scrolldown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+/* ABOUT ME PAGE */
+#aboutme {
+    height: 100vh;  
+    background-color: #393939;
+}
+
+.head-text {
+    font-size: 61px;
+    font-weight: bold;
+    color: #FF7BA1
+}
+
+.aboutme-text {
+    color: white;
+    font-size: 24px;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+}
+
+.img-text-containter {
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70em;
+    height:35em;
+    transform: translate(-50%, -50%);
+}
+#aboutme img {
+ width: 35em;
+ height: 38em;
+ padding-right: 10em;
+}
+
+/* PORTFOLIO PAGE */
+#portfolio {
+    height: 170vh;  
+    background-color: rgb(255, 255, 255);
+}
+
+#Resume-btn {
+    position: relative;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: rgba(221, 221, 221, 0.233);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.item .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+}
+
+.view-btn {
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    background-color: #FF7BA1;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+
+#portfolio a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color:#fa1858
+}
+
+.title {
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.item-data {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+}
+
+.project-container img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-container {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(400px, 1fr));
+    padding: 0px 50px 0px 50px;
+}
+
+#p-text {
+    text-align: center;
+    padding-top: 70px;
+}
+
+
+/* CONTACT PAGE */
+#contact {
+    height: 30vh;  
+    background-color: #393939;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact svg {
+    color: white; 
+    width: 50px;
+    height: 50px;
+}
+
+#contact .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact h5 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+}
+
+#contact a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 12px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .navbar-nav {
+        padding-left: 20rem;
+    }
+    #text1 {
+        position: absolute;
+        top: 34vh;
+        left: 21vh;
+    }
+    #text2 {
+        position: absolute;
+        top: 49vh;
+        left: 37vh;
+    }
+    .btn-container {
+        width: 48rem;
+    }
+    img, svg {
+        position: relative;
+        bottom: 20px;
+    }
+    #aboutme img {
+        position: relative;
+        left: 8em;
+    }
+    .aboutme-text {
+        padding: 0 150px 0 20px;
+    }
+    .project-container {
+        padding-right: 90px;
+    }
+    #portfolio .btn-container {
+        width: 25rem;
+    }
+    #portfolio {
+        height: 160vh; 
+    }
+}
+
+@media (max-width: 600px) {
+    #name {
+        width: 25em;
+    }
+    #text1 {
+        left: 10vh;
+        font-size: 20px;
+        width: 70%;
+        text-align: center;
+    }
+    #text2 {
+        left: 10vh;
+        font-size: 20px;
+        width: 70%;
+        text-align: center;
+    }
+    #home .btn-container {
+        width: 25rem;
+        left: 15em;
+        top: 30em;
+    }
+    .btn-outline-dark {
+        margin-right: 10px;
+    }
+    img, svg {
+        position: relative;
+        bottom: 40px;
+        width: 100em;
+    }
+    #aboutme {
+        height: 150vh;  
+    }
+    .img-text-containter {
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        top: 35em;
+        width: 100%;
+        margin-left: 30px;
+
+    }
+    #aboutme img {
+        height: 30em;
+        width: 30em;
+        top: 28em;
+        margin-left: 50px;
+    }
+    .aboutme-text {
+        position: relative;
+        top: -7em;
+        width: 100%;
+      
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutme-text .head-text {
+        width: 435px;
+        text-align: center;
+        height: 10em;
+    }
+    .text3-container {
+        width: 55vh;
+        text-align: center;
+        margin-top: 30px;
+    }
+    #portfolio {
+        height: 270vh;
+    }
+    #contact {
+        height: 25vh; 
+        padding: 20px;
+    }
+    
+    #contact svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #contact h5 {
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    
+    #contact a {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 1px;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .title {
+        padding-top: 0px;
+    }
+    
+}
+
+@media only screen  and (min-width : 1224px) {
+    #text1 {
+        top: 34vh;
+        left: 35vh;
+    }
+    #text2 {
+        top: 49vh;
+        left: 800px;
+    }
+    #portfolio {
+        height: 185vh;
+    }
+    }
+
+@media only screen  and (min-width : 1824px) {
+        #text1 {
+            position: absolute;
+            top: 34vh;
+            left: 61vh;
+        }
+        #text2 {
+            left: 72vh;
+        }
+        #home .btn-container {
+            width: 49rem;
+            left: 57em;
+        }
+        #portfolio {
+            height: 120vh;
+        }
+        }
+
+@media only screen  and (min-width : 1500px) {
+            #text1 {
+                left: 56vh;
+            }
+            #text2 {
+                left: 70vh;
+            }
+            #home .btn-container {
+                width: 45rem;
+                left: 47em;
+                top: 30em;
+            }
+            #portfolio {
+                height: 175vh;
+            }
+        }
+
+
+
