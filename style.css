@@ -56,7 +56,7 @@ header {
     top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: fill 0.5s ease forwards 3s;
+    animation: fill 0.5s ease forwards 2s;
 }
 
 @keyframes line-anim {
@@ -72,23 +72,6 @@ header {
     to {
         fill: #FF7BA1;
     }
-}
-
-.text {
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    color: #757070;
-}
-#text1 {
-    position: absolute;
-    top: 34vh;
-    left: 55.5vh;
-}
-
-#text2 {
-    position: absolute;
-    top: 49vh;
-    left: 70vh;
 }
 
 .btn-container {
@@ -308,20 +291,7 @@ header {
 
 /* RESPONSIVE */
 
-@media (min-width: 1024px) and (max-width: 1300px) {
-    .navbar-nav {
-        padding-left: 20rem;
-    }
-    #text1 {
-        position: absolute;
-        top: 34vh;
-        left: 21vh;
-    }
-    #text2 {
-        position: absolute;
-        top: 49vh;
-        left: 37vh;
-    }
+@media (min-width: 1024px) and (max-width: 1600px) {
     .btn-container {
         width: 48rem;
     }
@@ -348,28 +318,33 @@ header {
 }
 
 @media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
     #name {
-        width: 25em;
-    }
-    #text1 {
-        left: 10vh;
-        font-size: 20px;
-        width: 70%;
-        text-align: center;
-    }
-    #text2 {
-        left: 10vh;
-        font-size: 20px;
-        width: 70%;
-        text-align: center;
+        width: 20em;
     }
     #home .btn-container {
         width: 25rem;
-        left: 15em;
-        top: 32em;
+        /* left: 15em; */
+        top: 30em;
+        padding-top: 0;
     }
     .btn-outline-dark {
         margin-right: 10px;
+    }
+    #home .btn-container .btn {
+        height: 2.5em;
+        width: 9em;
+        font-size: 15px;
+    }
+    #home .btn-container {
+        justify-content: center;
+
+    }
+    #home #myname {
+        height: 30px;
+        bottom: 0px;
     }
     img, svg {
         position: relative;
@@ -377,7 +352,7 @@ header {
         width: 100em;
     }
     #aboutme {
-        height: 150vh;  
+        height: 140vh;  
     }
     .img-text-containter {
         flex-direction: column;
@@ -392,50 +367,65 @@ header {
         height: 30em;
         width: 30em;
         top: 28em;
-        margin-left: 50px;
+        margin-left: 0px;
     }
     .aboutme-text {
         position: relative;
         top: -7em;
         width: 100%;
-      
         display: flex;
         flex-direction: column;
+        padding-top: 0;
     }
     .aboutme-text .head-text {
-        width: 435px;
+        width: 300px;
         text-align: center;
-        height: 10em;
+        height: 17em;
+        font-size: 3rem;
+        
     }
     .text3-container {
-        width: 55vh;
+        width: 40vh;
         text-align: center;
-        margin-top: 30px;
+        font-size: 1.2rem;
+        position: relative;
+        top: -130px;
     }
     #portfolio {
-        height: 270vh;
+        height: 240vh;
+    }
+    .project-container {
+        padding: 25px;
+    }
+    #p-text {
+        font-size: 3rem;
+    }
+    .item {
+        width: 80%;
     }
     #contact {
-        height: 25vh; 
+        height: 15vh; 
         padding: 20px;
     }
     
     #contact svg {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
     
     #contact h5 {
-        padding-top: 10px;
-        font-size: 13px;
+        padding-top: 0px;
+        font-size: 10px;
     }
-    
+    .items {
+        padding-top: 50px;
+    }
     #contact a {
         color: white;
         font-family: 'Poppins', sans-serif;
-        padding-top: 1px;
+        padding-top: 0px;
         text-decoration: none;
-        font-size: 13px;
+        font-size: 10px;
     }
     .title {
         padding-top: 0px;
@@ -443,7 +433,7 @@ header {
     
 }
 
-@media only screen  and (min-width : 1224px) {
+/* @media only screen  and (min-width : 1224px) {
     #text1 {
         top: 34vh;
         left: 35vh;
@@ -455,7 +445,7 @@ header {
     #portfolio {
         height: 185vh;
     }
-    }
+    } */
 
 @media only screen  and (min-width : 1824px) {
         #text1 {
@@ -475,25 +465,22 @@ header {
         }
         }
 
-@media only screen  and (min-width : 1490px) {
+/* @media only screen  and (min-width : 1500px) {
             #text1 {
-                left: 46vh;
+                left: 56vh;
             }
             #text2 {
-                left: 58vh;
+                left: 70vh;
             }
             #home .btn-container {
                 width: 45rem;
                 left: 47em;
-                top: 32em;
+                top: 30em;
             }
             #portfolio {
                 height: 175vh;
             }
-        }
-
-
-        
+        } */
 
 
 
