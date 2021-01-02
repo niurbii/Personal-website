@@ -155,8 +155,8 @@ header {
 }
 
 /* PORTFOLIO PAGE */
-#portfolio {
-    height: 190vh;  
+#portfolio-page {
+    height: 180vh;
     background-color: rgb(255, 255, 255);
 }
 
