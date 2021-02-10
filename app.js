@@ -1,3 +1,5 @@
 $(window).scroll(function(){
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 750);
+    $('.scroll-nav').toggleClass('scrolled', $(this).scrollTop() > 750);
 });
+
+//remove "nav" div when 
