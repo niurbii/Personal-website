@@ -390,9 +390,6 @@ header {
         font-size: 1.2rem;
 
     }
-    #portfolio-page {
-        height: 240vh;
-    }
     .project-container {
         padding: 25px;
         display: flex;
