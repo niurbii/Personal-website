@@ -157,10 +157,11 @@ header {
 
 /* PORTFOLIO PAGE */
 #portfolio-page {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255); 
 }
 
 #Resume-btn {
+    padding: 80px 0 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,6 +185,7 @@ header {
 }
 
 .item img {
+    padding-top: 20px;
     width: 100%;
     height: 300px;
     border-radius: 4px;
@@ -211,14 +213,14 @@ header {
     padding-top: 60px;
 }
 
-#portfolio a:hover {
+#portfolio-page a:hover {
     text-decoration: none;
     color: #fff;
     background-color:#fa1858
 }
 
 .title {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 1.5rem;
 }
 
@@ -243,6 +245,7 @@ header {
     grid-gap: 25px;
     grid-template: auto / repeat(auto-fit, minmax(400px, 1fr));
     padding: 0px 50px 0px 50px;
+    background-color: rgb(255, 255, 255); 
 }
 
 #p-text {
@@ -253,7 +256,7 @@ header {
 
 /* CONTACT PAGE */
 #contact {
-    height: 30vh;  
+    padding: 50px 0 50px 0;
     background-color: #393939;
     overflow: hidden;
     display: flex;
@@ -308,10 +311,10 @@ header {
     .project-container {
         padding-right: 90px;
     }
-    #portfolio .btn-container {
+    #portfolio-page .btn-container {
         width: 25rem;
     }
-    #portfolio {
+    #portfolio-page {
         height: 160vh; 
     }
 }
@@ -387,7 +390,7 @@ header {
         font-size: 1.2rem;
 
     }
-    #portfolio {
+    #portfolio-page {
         height: 240vh;
     }
     .project-container {
@@ -446,7 +449,7 @@ header {
             width: 49rem;
             left: 57em;
         }
-        #portfolio {
+        #portfolio-page {
             height: 120vh;
         }
         }
